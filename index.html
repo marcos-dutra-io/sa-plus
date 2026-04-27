@@ -7,17 +7,20 @@
 
     <title>Sistema de Avaliações | SA+</title> <!-- SEO / Theme -->
 
-    <meta name="theme-color" content="#">
+    <!-- SEO base -->
+    <meta name="description" content="Sistema de Avaliações SA+ para gestão escolar e acompanhamento de anos letivos.">
+    <meta name="theme-color" content="#0d6efd">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Sistema de Avaliações SA+">
+    <meta property="og:description" content="Plataforma educacional para avaliação escolar por anos letivos.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://marcos-dutra-io.github.io/sa-plus/">
+    <meta property="og:image" content="assets/og/preview.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+
     <link href="assets/icons/favicon.ico" rel="icon">
 
     <!-- Fonts -->
@@ -37,17 +40,17 @@
     </a>
 
     <!--NAV-->
-    <header>
+    <header class="site-header" role="banner">
 
-        <nav>
+        <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
 
-            <div>
+            <div class="container">
 
                 <a class="brand" href="#top">
-                    <span>Sistema de Avaliações |</span>
-                    <span class="gradient-text"> SA+</span>
+                    Sistema de Avaliações <span class="gradient-text"> SA+</span>
                 </a>
 
+                <!-- Toggle -->
                 <button
                         class="navbar-toggler border-0 shadow-none"
                         type="button"
@@ -55,20 +58,21 @@
                         data-bs-target="#menu"
                         aria-controls="menu"
                         aria-expanded="false"
-                        aria-label="Abrir menu principal">
+                        aria-label="Abrir menu">
 
                     <span class="navbar-toggler-icon"></span>
 
                 </button>
 
-                <div>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="menu">
 
-                    <ul>
+                    <ul class="navbar-nav ms-auto">
 
-                        <li><a href=""> Início </a></li>
-                        <li><a href=""> Disciplina </a></li>
-                        <li><a href=""> Galeria </a></li>
-                        <li><a href=""> Entrar </a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#home"> Início </a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#courses"> Disciplina </a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#gallery"> Galeria </a></li>
+                        <li class="nav-item"><a class="nav-link"  href="#sing-in"> Entrar </a></li>
                     </ul>
 
                 </div>
@@ -81,13 +85,19 @@
 
     <main>
 
-        <section id="home" class="hero">
+        <section id="home" class="hero section-space">
 
-            <div>
+            <div class="container">
 
-                <header>
+                <header class="text-center">
 
-                    <div></div>
+                    <h1 class="display-6">
+                        Sistema de Avaliações SA+
+                    </h1>
+
+                    <p class="text-muted">
+                        Plataforma educacional modular para acompanhamento escolar
+                    </p>
 
                 </header>
 
@@ -95,13 +105,14 @@
 
         </section>
 
+        <!-- COURSES -->
         <section id="courses" class="section-space">
 
-            <div>
+            <div class="container">
 
                 <header>
 
-                    <div></div>
+                    <h2>Disciplinas</h2>
 
                 </header>
 
@@ -109,13 +120,14 @@
 
         </section>
 
+        <!-- GALLERY -->
         <section id="gallery" class="section-space">
 
-            <div>
+            <div class="container">
 
                 <header>
 
-                    <div></div>
+                    <h2>Galeria</h2>
 
                 </header>
 
@@ -123,30 +135,33 @@
 
         </section>
 
+        <!-- SIGN IN -->
         <section id="sing-in" class="section-space">
 
-            <div>
+            <div class="container">
 
                 <header>
 
-                    <div></div>
+                    <h2>Entrar</h2>
+
                 </header>
 
             </div>
 
         </section>
 
-        <a href="#top" class="scroll-top">
+        <!-- SCROLL TOP -->
+        <a href="#top" class="scroll-top" aria-label="Voltar ao topo">
             <span aria-hidden="true">↑</span>
             <span class="visually-hidden"> Voltar ao topo</span>
         </a>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
 
-        <div class="container">
-            <p> © 2026 Marcos Dutra • Desenvolvido com HTML, CSS e JavaScript </p>
+        <div class="container text-center py-4">
+            <p class="mb-0"> © 2026 Marcos Dutra • Desenvolvido com HTML, CSS e JavaScript </p>
         </div>
 
     </footer>
