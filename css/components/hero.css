@@ -1,0 +1,12 @@
+.hero {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.hero h1 {
+    font-weight: 600;
+}
+
+.hero p {
+    color: var(--muted);
+}

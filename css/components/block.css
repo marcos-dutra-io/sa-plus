@@ -1,0 +1,16 @@
+.block {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+
+    color: #212121;
+    transition: 0.2s ease;
+}
+
+.block:hover {
+    background: var(--primary);
+    color: #fff;
+}

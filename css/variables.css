@@ -1,0 +1,29 @@
+:root {
+    /* ===== Cores base ===== */
+    --bg: #212121;
+    --text: #ffffff;
+    --muted: rgba(255,255,255,0.7);
+    --primary: #0d6efd;
+
+    /* ===== Disciplinas ===== */
+    --portugues: #ffeb99;
+    --arte: #ffcc00;
+    --educacao-fisica: #ff6666;
+    --ingles: #4dffd8;
+    --matematica: #ff9933;
+    --ciencias: #66ff66;
+    --geografia: #66ccff;
+    --historia: #cc99ff;
+    --ensino-religioso: #ffcc99;
+
+    /* ===== Espaçamento ===== */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+
+    /* ===== Bordas ===== */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+}

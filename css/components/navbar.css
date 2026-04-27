@@ -1,0 +1,29 @@
+.s-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* brand */
+.brand {
+    font-weight: bold;
+    color: var(--text);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #0d6efd, #66ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* nav links */
+.navbar-nav .nav-link {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text);
+}

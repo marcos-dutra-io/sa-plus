@@ -1,0 +1,23 @@
+.c-scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+
+    opacity: 0.85;
+    transition: 0.2s;
+}
+
+.c-scroll-top:hover {
+    opacity: 1;
+}
