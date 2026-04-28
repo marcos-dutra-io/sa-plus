@@ -23,32 +23,41 @@
 }
 
 /* =========================
-   PRIMARY
+   VARIANTS
 ========================= */
 
 .btn--primary {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
-}
-
-.btn--primary:hover {
-    filter: brightness(1.1);
-}
-
-/* =========================
-   OUTLINE
-========================= */
-
-.btn--outline {
     background: transparent;
     color: var(--text);
     border-color: var(--primary);
 }
 
+.btn--outline {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--muted);
+}
+
+/* hover só altera feedback, não estado */
+.btn--primary:hover,
 .btn--outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* =========================
+   STATE: ACTIVE (UNIVERSAL)
+========================= */
+
+.btn.is-active {
     background: var(--primary);
     color: #fff;
+    border-color: var(--primary);
+}
+
+/* hover no ativo (leve feedback) */
+.btn.is-active:hover {
+    filter: brightness(1.05);
 }
 
 /* =========================
@@ -63,16 +72,6 @@
 .btn--lg {
     padding: var(--space-md) var(--space-lg);
     font-size: 1.05rem;
-}
-
-/* =========================
-   STATE: ACTIVE
-========================= */
-
-.btn.active {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
 }
 
 /* =========================
