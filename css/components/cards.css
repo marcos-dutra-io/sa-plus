@@ -1,0 +1,135 @@
+/* =========================
+   CARD BASE SYSTEM
+========================= */
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.02);
+
+    color: var(--text);
+
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* hover base */
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+
+/* =========================
+   DISCIPLINAS (SYSTEM)
+========================= */
+
+.card[data-discipline="portugues"]::before,
+.card[data-discipline="matematica"]::before,
+.card[data-discipline="ciencias"]::before,
+.card[data-discipline="historia"]::before,
+.card[data-discipline="geografia"]::before,
+.card[data-discipline="ingles"]::before,
+.card[data-discipline="arte"]::before,
+.card[data-discipline="educacao-fisica"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    opacity: 0.9;
+}
+
+/* CORES */
+.card[data-discipline="portugues"]::before {
+    background: var(--portugues);
+}
+
+.card[data-discipline="matematica"]::before {
+    background: var(--matematica);
+}
+
+.card[data-discipline="ciencias"]::before {
+    background: var(--ciencias);
+}
+
+.card[data-discipline="historia"]::before {
+    background: var(--historia);
+}
+
+.card[data-discipline="geografia"]::before {
+    background: var(--geografia);
+}
+
+.card[data-discipline="ingles"]::before {
+    background: var(--ingles);
+}
+
+.card[data-discipline="arte"]::before {
+    background: var(--arte);
+}
+
+.card[data-discipline="educacao-fisica"]::before {
+    background: var(--educacao-fisica);
+}
+
+
+.card:hover {
+    transform: translateY(-3px) scale(1.01);
+}
+
+/* glow leve por disciplina */
+.card[data-discipline="portugues"]:hover {
+    box-shadow: 0 10px 25px rgba(255, 235, 153, 0.15);
+    border-color: var(--portugues);
+}
+
+.card[data-discipline="matematica"]:hover {
+    box-shadow: 0 10px 25px rgba(255, 153, 51, 0.15);
+    border-color: var(--matematica);
+}
+
+.card[data-discipline="ciencias"]:hover {
+    box-shadow: 0 10px 25px rgba(102, 255, 102, 0.15);
+    border-color: var(--ciencias);
+}
+
+.card[data-discipline="historia"]:hover {
+    box-shadow: 0 10px 25px rgba(204, 153, 255, 0.15);
+    border-color: var(--historia);
+}
+
+.card[data-discipline="geografia"]:hover {
+    box-shadow: 0 10px 25px rgba(102, 204, 255, 0.15);
+    border-color: var(--geografia);
+}
+
+.card[data-discipline="ingles"]:hover {
+    box-shadow: 0 10px 25px rgba(77, 255, 216, 0.15);
+    border-color: var(--ingles);
+}
+
+.card[data-discipline="arte"]:hover {
+    box-shadow: 0 10px 25px rgba(255, 204, 0, 0.15);
+    border-color: var(--arte);
+}
+
+.card[data-discipline="educacao-fisica"]:hover {
+    box-shadow: 0 10px 25px rgba(255, 102, 102, 0.15);
+    border-color: var(--educacao-fisica);
+}

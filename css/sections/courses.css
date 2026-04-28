@@ -1,0 +1,31 @@
+/* =========================
+   COURSES SECTION
+========================= */
+
+.c-courses {
+    background: var(--bg);
+}
+
+/* header da seção */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    color: var(--text);
+}
+
+.section-subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: var(--space-xs);
+}
+
+/* grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-md);
+}
