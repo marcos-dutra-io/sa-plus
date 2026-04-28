@@ -1,9 +1,26 @@
 :root {
     /* ===== Cores base ===== */
-    --bg: #212121;
+    --page-bg: #212121;
     --text: #ffffff;
     --muted: rgba(255,255,255,0.7);
     --primary: #0d6efd;
+
+    .theme-iniciais {
+        --page-bg: radial-gradient(
+                circle at top,
+                #263238,
+                #121212
+        );
+    }
+
+    .theme-finais {
+        --page-bg: radial-gradient(
+                circle at top,
+                #1b1f2a 0%,
+                #0f1115 70%,
+                #0a0c10 100%
+        );
+    }
 
     /* ===== Disciplinas ===== */
     --portugues: #ffeb99;

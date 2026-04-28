@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: var(--bg);
+    background-color: var(--page-bg);
     color: var(--text);
     font-family: Arial, sans-serif;
 }
