@@ -51,6 +51,32 @@
 }
 
 /* =========================
+   YEAR SWITCH
+========================= */
+
+.year-switch {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin: var(--space-lg) 0;
+}
+
+/* =========================
+   YEAR LIST
+========================= */
+
+.year-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.year-list.hidden {
+    display: none;
+}
+
+/* =========================
    IFRAME
 ========================= */
 

@@ -97,10 +97,56 @@
                     </h1>
 
                     <p class="hero-subtitle">
-                        Plataforma educacional modular para acompanhamento escolar
+                        Clique no seu ano escolar
                     </p>
 
                 </header>
+
+                <!-- ESCOLHA DE CICLO -->
+                <div class="year-switch">
+
+                    <button class="btn btn--primary active" data-target="finais">
+                        Anos Finais
+                    </button>
+
+                    <button class="btn btn--outline" data-target="iniciais">
+                        Anos Iniciais
+                    </button>
+
+                </div>
+
+                <!-- ANOS -->
+                <div class="year-list" id="anosFinais">
+
+                    <a href="pages/anos_escolares/ano6.html" target="frame1" class="btn btn--outline btn--sm active">6º Ano</a>
+                    <a href="pages/anos_escolares/ano7.html" target="frame1" class="btn btn--outline btn--sm">7º Ano</a>
+                    <a href="pages/anos_escolares/ano8.html" target="frame1" class="btn btn--outline btn--sm">8º Ano</a>
+                    <a href="pages/anos_escolares/ano9.html" target="frame1" class="btn btn--outline btn--sm">9º Ano</a>
+
+                </div>
+
+                <div class="year-list hidden" id="anosIniciais">
+
+                    <a href="pages/anos_escolares/ano1.html" target="frame1" class="btn btn--outline btn--sm">1º Ano</a>
+                    <a href="pages/anos_escolares/ano2.html" target="frame1" class="btn btn--outline btn--sm">2º Ano</a>
+                    <a href="pages/anos_escolares/ano3.html" target="frame1" class="btn btn--outline btn--sm">3º Ano</a>
+                    <a href="pages/anos_escolares/ano4.html" target="frame1" class="btn btn--outline btn--sm">4º Ano</a>
+                    <a href="pages/anos_escolares/ano5.html" target="frame1" class="btn btn--outline btn--sm">5º Ano</a>
+
+                </div>
+
+
+                <!-- IFRAME -->
+                <div class="hero-frame">
+
+                    <iframe
+                            id="frame1"
+                            name="frame1"
+                            src="pages/anos_escolares/ano6.html"
+                            loading="lazy">
+                    </iframe>
+
+                </div>
 
             </div>
 
